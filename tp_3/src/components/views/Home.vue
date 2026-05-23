@@ -9,7 +9,6 @@ const agregar_carrito = () => {
 <template>
     <div class="listado_productos" v-if="props.prods && props.prods.length > 0">
         <h1>PRODUCTOS</h1>
-        <h3>Parte 1</h3>
         <TarjetaProducto>
             <template #header> {{ props.prods[0].nombre }} - {{ props.prods[0].categoria }} </template>
             <template #body="{ expandida, toggleExpandir }">
@@ -60,6 +59,7 @@ const agregar_carrito = () => {
 
 <style scoped>
 .listado_productos {
+    border: solid 1px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

@@ -37,7 +37,6 @@ onBeforeUnmount(() => {
 
 <template>
     <div class="listado_productos">
-        <h3>Parte 2</h3>
         <div v-if="cargando">
             <h2>Cargando...</h2>
         </div>
