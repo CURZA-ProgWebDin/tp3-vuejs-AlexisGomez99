@@ -27,7 +27,7 @@ const currentSinKeep = ref("TabTodos");
         <h4>Sin KeepAlive</h4>
         <div class="Interfaz-sin-keep">
             <ul>
-                <li v-for="(_, index) in components" key="index">
+                <li v-for="(_, index) in components" :key="index">
                     <button @click=" currentSinKeep = index">{{ index }}</button>
                 </li>
             </ul>
@@ -36,7 +36,7 @@ const currentSinKeep = ref("TabTodos");
         <h4>Con KeepAlive</h4>
         <div class="Interfaz-con-keep">
             <ul>
-                <li v-for="(_, index) in components" key="index">
+                <li v-for="(_, index) in components" :key="index">
                     <button @click=" currentConKeep = index">{{ index }}</button>
                 </li>
             </ul>
